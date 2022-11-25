@@ -5,12 +5,13 @@ from player import Player
 ROUNDS = [8,7,6,5]
 
 class Game:
-    # Fix deck of bird cards
-    deck = []
+    
+    
     
     def __init__(self, players:int) -> None:
-        self.players = [Player(self) for i in range(players)]
-        self.board = Board()
+        self.deck = []
+        assert players <= 5
+        self.players = [Player(self, number) for i in range(players)]
         self.bird_cards = []
         self.birdfeeder = Birdfeeder()
         
@@ -20,6 +21,7 @@ class Game:
     def game(self) -> None:
         for round in ROUNDS:
             self.birdfeeder.reroll()
+            self.new_bird_cards()
             
             for turn in round: 
                 for player in self.players:

@@ -1,0 +1,2 @@
+## List of birds format: Name, (Habitats), Points, Nest_type, Max_eggs, Function_type, worm_cost, wheat_cost, berry_cost, mouse_cost, fish_cost
+Acorn Woodpecker, (Tree), 4, 

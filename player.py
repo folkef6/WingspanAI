@@ -1,12 +1,12 @@
-from bird import Bird
 from typing import List
 from board import Board
 from game import Game
 
 class Player: 
     
-    def __init__(self, game:Game) -> None:
+    def __init__(self, game:Game, number) -> None:
         self.game = game
+
         # Cards:
         self.bird_cards    = []
         self.mission_cards = []
@@ -22,6 +22,7 @@ class Player:
         self.board = Board()
         
         # Misc: 
+        self.player_number = number
         self.score = 0
         
     
@@ -37,3 +38,6 @@ class Player:
     
     def gain_food_birdfeeder(self) -> None:
         pass
+    
+    def play_turn(self) -> None: 
+        print()
