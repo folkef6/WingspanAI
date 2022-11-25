@@ -1,5 +1,5 @@
 from typing import List
-from bird import Bird
+#from bird import Bird
 
 class Board:
     tree_habitat = []

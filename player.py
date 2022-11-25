@@ -1,10 +1,10 @@
 from typing import List
 from board import Board
-from game import Game
+#from game import Game
 
 class Player: 
     
-    def __init__(self, game:Game, number) -> None:
+    def __init__(self, game, number) -> None:
         self.game = game
 
         # Cards:

@@ -9,8 +9,8 @@ class Bird:
                  NestType:str, HabitatForest: bool, HabitatGrass: bool,
                  HabitatWater:bool, EggLimit:int, PowerType:str,
                  worm_cost: int, berry_cost:int, wheat_cost:int, 
-                 mouse_cost:int, fish_cost, FoodWild:int, WingspanCM: int 
-                 ) -> None:
+                 mouse_cost:int, fish_cost, FoodWild:int, WingspanCM: int, 
+                 either_or: bool) -> None:
         self.name = EnglishName
         self.points = VictoryPoints
         self.nest = NestType
@@ -29,6 +29,7 @@ class Bird:
         self.fish_cost = fish_cost
         self.any_cost = FoodWild
         self.tucked_stashed = 0
+        self.either_or = either_or
         
     
     def activate_function(self):

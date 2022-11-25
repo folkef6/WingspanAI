@@ -1,5 +1,4 @@
 from birdfeeder import Birdfeeder
-from board import Board
 from player import Player
 
 ROUNDS = [8,7,6,5]
